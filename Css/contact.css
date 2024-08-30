@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+}
+
+/* Header Section */
+.bar-nav {
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.fa-pizza-slice {
+    color: gold;
+    font-size: 18px;
+}
+
+h6 {
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16.5px;
+    letter-spacing: 3px;
+}
+
+.top-ul,
+#menuList,
+.header-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-list {
+    list-style: none;
+}
+
+.header-list1 {
+    margin-right: auto;
+    padding-left: 30px;
+}
+
+.header-link {
+    position: relative;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5px;
+    padding: 10px 30px;
+}
+
+.header-link:hover {
+    font-size: 19px;
+    color: gold;
+    transition: all 0.8s ease;
+}
+ .active-link{
+    color: goldenrod;
+ }
+/* #logo2{
+    display: none;
+    justify-content: center;
+    transform: translate(150%,5%);
+    flex-direction: column;
+} */
+#menu-btn {
+    display: none;
+}
+
+#menu-btn2 {
+    display: none;
+}
+
+#link1::after {
+    content: "";
+    position: absolute;
+    background-color: goldenrod;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 5px;
+    transition: 0.5s;
+}
+
+#link1:hover::after {
+    width: 100%;
+}
+
+.fa-xmark {
+    font-size: 22px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    color: aliceblue;
+}
+
+/* End Of Header Section */
+.intro-section {
+    background-image: url(..//Images/bg_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 620px;
+    animation: animate 16s infinite;
+}
+
+.section-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 620px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15rem;
+}
+.intro-text-2 {
+    font-family: "Josefin Sans", sans-serif;
+    color: honeydew;
+    font-size: 42px;
+    font-weight: 600;
+}
+/* Scroll Button Section */
+#progress {
+    color: gold;
+    font-size: 25px;
+    font-weight: 700;
+    position: fixed;
+    z-index: 5;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: black;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+/* End of Scroll Section */
+/* Contact Section */
+.contact-section {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* height: 500px;
+     position: relative;
+    bottom: 18px; */
+    padding: 30px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.contact-heading {
+    color: gainsboro;
+    font-size: 26px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    /* padding-left: 75px;
+    padding-top: 50px; */
+}
+
+.address {
+    color: gray;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    /* padding-left: 35px; */
+}
+.address-2 {
+    color: goldenrod;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    /* padding-left: 35px; */
+}
+
+.add-color {
+    color: gainsboro;
+    font-weight: 600;
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+}
+input {
+    margin-left: 20px;
+    border-top: none;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(183, 184, 185);
+    font-size: 18px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 25px 85px;
+    /* padding-left: 30px; */
+    background-color: rgb(19, 18, 18);
+}
+
+#sub {
+    text-align: left;
+    width: 93%;
+    padding-bottom: 40px;
+}
+#sub-2 {
+    /* padding: 65px 245px; */
+    text-align: left;
+    width: 93%;
+    height: 155px;
+    padding-bottom: 120px;
+}
+.msg-btn {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    background-color: goldenrod;
+    border: none;
+    font-size: 17px;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 20px 40px;
+    position: relative;
+    left: 50px;
+}
+
+.msg-btn:hover {
+    background-color: transparent;
+    color: goldenrod;
+    border: 1px goldenrod solid;
+    transition: width 2s, linear, 0.5s;
+}
+/* Footer Section */
+footer {
+    background-color: black;
+    /* height: 400px; */
+}
+
+.footer-container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.foot-head {
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18.5px;
+}
+
+.main-foot-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.foot-text-1 {
+    font-family: "Poppins", sans-serif;
+    color: gray;
+    width: 55%;
+}
+
+.foot-img-container {
+    display: flex;
+}
+
+.foot-img {
+    width: 25%;
+}
+
+.fa-calendar-days,
+.fa-user,
+.fa-message {
+    color: gray;
+}
+
+.foot-caption {
+    font-family: "Josefin Sans", sans-serif;
+    color: aliceblue;
+    letter-spacing: 1.5px;
+    width: 90%;
+}
+
+.foot-date {
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 10px;
+}
+
+.month {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: gainsboro;
+}
+
+.foot-list {
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    color: gray;
+    font-size: 20px;
+}
+
+.question-list {
+    font-family: "Poppins", sans-serif;
+    color: gray;
+    list-style: none;
+    padding: 10px;
+}
+
+.fa-location-dot,
+.fa-envelope,
+.fa-phone {
+    color: gainsboro;
+}
+
+.foot-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#foot-media {
+    color: gainsboro;
+    background-color: rgb(49, 48, 48);
+    padding: 15px 15px;
+    border-radius: 100%;
+}
+
+#foot-media:hover {
+    background-color: goldenrod;
+    color: black;
+    transition: width 2s, linear, 0.5s;
+}
+
+.break {
+    display: none;
+}
+
+.my-id {
+    color: gainsboro;
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Responsive Design */
+@media (max-width:1024px) {
+    .footer-container {
+    padding: 30px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto;
+}
+}
+@media (max-width:912px) {
+    input {
+    margin-left: 20px;
+    border-top: none;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(183, 184, 185);
+    font-size: 18px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 25px 45px;
+    /* padding-left: 30px; */
+    background-color: rgb(19, 18, 18);
+}
+
+#sub {
+    text-align: left;
+    width: 85%;
+    padding-bottom: 40px;
+}
+#sub-2 {
+    /* padding: 65px 245px; */
+    text-align: left;
+    width: 85%;
+    height: 155px;
+    padding-bottom: 120px;
+}
+}
+@media (max-width:853px) {
+    input {
+        margin-left: 20px;
+        border-top: none;
+        font-family: "Josefin Sans", sans-serif;
+        color: rgb(183, 184, 185);
+        font-size: 18px;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        padding: 25px 35px;
+        /* padding-left: 30px; */
+        background-color: rgb(19, 18, 18);
+    }
+
+    #sub {
+        text-align: left;
+        width: 85%;
+        padding-bottom: 40px;
+    }
+
+    #sub-2 {
+        /* padding: 65px 245px; */
+        text-align: left;
+        width: 85%;
+        height: 135px;
+        padding-bottom: 120px;
+    }
+}
+@media (max-width:800px) {
+        #logo{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.bar-nav{
+    width: 100%;
+}
+    .top-ul,
+    .header-list {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: black;
+        z-index: 100;
+    }
+
+    #menuList {
+        display: none;
+    }
+
+    /* .drop-bar{
+    display: none;
+  } */
+    .header-list:nth-child(8),
+    .fa-bars {
+        margin-right: auto;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+    #menu-btn2 {
+    transform: translate(-70%,-50%);
+}
+}
+@media (max-width:768px) {
+    input {
+    margin-left: 20px;
+    border-top: none;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(183, 184, 185);
+    font-size: 18px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 25px 25px;
+    /* padding-left: 30px; */
+    background-color: rgb(19, 18, 18);
+}
+.foot-text-1 {
+    font-family: "Poppins", sans-serif;
+    color: gray;
+    width: 65%;
+}
+}
+@media (max-width:540px) {
+    .contact-container {
+    display: grid;
+    grid-template-columns: auto;
+}
+    input {
+    margin-left: 10px;
+    border-top: none;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(183, 184, 185);
+    font-size: 18px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 25px 25px;
+    /* padding-left: 30px; */
+    background-color: rgb(19, 18, 18);
+}
+}
+@media (max-width:430px) {
+    .address {
+    color: gray;
+    font-size: 16px;
+    width: 85%;
+    font-family: "Poppins", sans-serif;
+    /* padding-left: 35px; */
+}
+.names {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+    input {
+    margin-left: -5px;
+    border-top: none;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(183, 184, 185);
+    font-size: 18px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 25px 5px;
+    /* padding-left: 30px; */
+    background-color: rgb(19, 18, 18);
+}
+#sub {
+    text-align: left;
+    width: 95%;
+    padding-bottom: 40px;
+}
+
+#sub-2 {
+    /* padding: 65px 245px; */
+    text-align: left;
+    width: 95%;
+    height: 115px;
+    padding-bottom: 120px;
+}
+.footer-container {
+    padding: 30px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: auto;
+}
+}

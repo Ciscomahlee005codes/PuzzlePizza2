@@ -1,0 +1,2912 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+section{
+    width: 100%;
+}
+/* Header Section */
+.bar-nav{
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+}
+#logo{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.fa-pizza-slice{
+    color: gold;
+    font-size: 18px;
+}
+h6{
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16.5px;
+    letter-spacing: 3px;
+}
+.top-ul, #menuList, .header-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-list{
+    list-style: none;
+}
+.header-list1{
+    margin-right: auto;
+    padding-left: 30px;
+}
+.header-link{
+    position: relative;
+ text-decoration: none;
+ font-family: "Josefin Sans", sans-serif;
+ font-size: 18px;
+ color: rgb(255, 255, 255);
+ letter-spacing: 0.5px;
+ padding: 10px 30px;
+}
+.header-link:hover{
+    font-size: 19px;
+    color: gold;
+    transition: all 0.8s  ease;
+}
+/* #logo2{
+    display: none;
+    justify-content: center;
+    transform: translate(150%,5%);
+    flex-direction: column;
+} */
+ .active-link{
+    color: goldenrod;
+ }
+#menu-btn{
+    display: none;
+}
+#menu-btn2 {
+    display: none;
+}
+#link1::after{
+    content: "";
+    position: absolute;
+    background-color: goldenrod;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 5px;
+    transition: 0.5s;
+}
+#link1:hover::after{
+    width: 100%;
+}
+.fa-xmark{
+    font-size: 22px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    color: aliceblue;
+}
+/* End Of Header Section */
+.intro-section{
+    background-image: url(..//Images/bg_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 620px;
+     animation: animate 16s infinite;
+}
+.section-container{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 620px;
+   background: rgba(0, 0, 0, 0.5);
+}
+.text-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 12rem;
+}
+@keyframes animate {
+    0%,100%{
+        background-image: url(..//Images/bg_3.jpg);
+    }
+   25% {
+       background-image: url(..//Images/bg_1.jpg);
+   }
+   50%{
+       background-image: url(..//Images/gallery-3.jpg);
+   }
+   75% {
+       background-image: url(..//Images/image_5.jpg);
+   }
+}
+.intro-text-1{
+    font-size: 36px;
+    color: gold;
+    font-family: "Nothing You Could Do", cursive;
+}
+.intro-text-2{
+    font-family: "Josefin Sans", sans-serif;
+        color: honeydew;
+        font-size: 42px;
+        font-weight: 600;
+}
+.intro-text-3{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 28px;
+    color: honeydew;
+    font-weight: 600;
+}
+.link-container{
+    display: flex;
+    gap: 30px;
+}
+.intro-link{
+    text-decoration: none;
+    font-size: 26px;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    border: 1.5px solid gainsboro;
+    padding: 15px 30px;
+}
+.intro-link:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 900ms ease;
+}
+/* Contact Section */
+.contact-info{
+  display: flex;
+  flex-direction: row;  
+}
+.location{
+    display: flex;
+    padding: 20px;
+    gap: 45px;
+    background-color: black;
+    width: 100%;
+}
+.social-media{
+    background-color: goldenrod;
+    width: 30%;
+}
+.media-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+   padding-top: 2rem;
+}
+.con-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.no-1, .no-2{
+    list-style: none;
+}
+.no-1{
+    font-size: 20px;
+  color: aliceblue;
+  font-family: "Josefin Sans", sans-serif;
+}
+.no-2{
+    text-align: center;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+}
+#econs{
+    color: gainsboro;
+}
+.fa-facebook, .fa-twitter, .fa-instagram{
+    font-size: 22px;
+}
+/* Contact Section Ends */
+.welcome-container{
+    display: flex;
+    flex-direction: row;
+}
+.welcome-text-container{
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 30px;
+}
+.welcome-image{
+    width: 50%;
+    height: 100%;
+}
+.welcome-head{
+    text-align: center;
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 28px;
+}
+.color{
+    color: gold;
+}
+.welcome-text{
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    line-height: 3rem;
+}
+/* End of Welcome Section */
+/* Scroll Button Section */
+#progress {
+    color: gold;
+    font-size: 25px;
+    font-weight: 700;
+    position: fixed;
+    z-index: 5;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: black;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+/* End of Scroll Section */
+/*  Service Section */
+.service-section{
+    background-image: url(..//Images/food.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 30px;
+}
+.service-head{
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 32px;
+}
+.service-text{
+    font-family: "Poppins", sans-serif;
+    font-size: 16.5px;
+    text-align: center;
+}
+.icon-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.icon-1{
+    display: grid;
+    place-items: center;
+}
+.fa-burger, .fa-truck, .fa-utensils{
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+    border: 1.5px black solid;
+    font-size: 40px;
+    padding: 50px 50px;
+}
+.fa-utensils:hover{
+    background-color: black;
+    color: aliceblue;
+    transform: rotate(-360deg);
+    transition: 900ms ease;
+}
+.fa-truck:hover {
+    background-color: black;
+    color: aliceblue;
+    transform: rotate(-360deg);
+    transition: 900ms ease;
+}
+.fa-burger:hover {
+    background-color: black;
+    color: aliceblue;
+    transform: rotate(-360deg);
+    transition: 900ms ease;
+}
+.caption{
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 17px;
+}
+.icon-text{
+    font-family: "Poppins", sans-serif;
+        font-size: 16.5px;
+        width: 70%;
+}
+/* End of Service Section */
+/* Hot Pizza Section */
+.hot-pizza-section{
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 30px;
+}
+.pizza-info-container{
+   display: grid;
+   grid-template-columns: auto auto auto;
+}
+.hot-pizza-head{
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+}
+.hot-pizza-text{
+    text-align: center;
+    color: gray;
+    font-family: "Poppins", sans-serif;
+}
+.pizza-figure{
+    display: flex;
+    flex-direction: row;
+}
+.pizza-image-1, .pizza-image-2, .pizza-image-3,
+.pizza-image-4, .pizza-image-5, .pizza-image-6{
+    width: 50%;
+}
+.pizza-info-1, .pizza-info-2, .pizza-info-3,
+.pizza-info-4, .pizza-info-5, .pizza-info-6{
+    padding: 10px 20px;
+}
+.pizza-text-1, .pizza-text-2, .pizza-text-3,
+.pizza-text-4, .pizza-text-5, .pizza-text-6{
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+.pizza-image-head{
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    /* text-align: center; */
+}
+.pizza-price{
+    color: gold;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+.pizza-btn{
+    text-decoration: none;
+    color: gainsboro;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    border: 1.5px white solid;
+    padding: 5px 5px;
+}
+.pizza-btn:hover{
+    background-color: goldenrod;
+    color: black;
+    transition: 800ms ease;
+    border: none;
+}
+.price-link{
+    display: flex;
+    gap: 10px;
+}
+/* End of Hot Pizza Section */
+/* Pizza Menu Section */
+.pizza-menu-section{
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 30px;
+}
+.pizza-menu-head{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+}
+.menu-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.fa-diamond{
+    color: goldenrod;
+    font-size: 20px;
+}
+.fa-gem{
+    color: goldenrod;
+    font-size: 26px;
+}
+.dot-1{
+    color: goldenrod;
+}
+.menu-intro-text{
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+.menu-img{
+    width: 20%;
+    border-radius: 50%;
+}
+.main-menu{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+.menu-1{
+    display: flex;
+}
+.internal-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding: 15px;
+}
+.menu-price{
+    display: flex;
+    gap: 15px;
+}
+.menu-name{
+    color: gray;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+}
+.menu-dot{
+    color: goldenrod;
+}
+.main-price{
+    color: goldenrod;
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+}
+.menu-1-text{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: gray;
+}
+/* End of Menu Section */
+
+/* Gallery Section */
+.gallery-section{
+    background-image: url(..//Images/bg_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 650px;
+}
+.gallery-container{
+    position: absolute;
+    /* width: 100%; */
+    height: 650px;
+    background: rgba(0, 0, 0, 0.8);
+    background-attachment: fixed;
+}
+.gallery-photos{
+    display: flex;
+    flex-direction: row;
+}
+.gallery-img{
+    width: 25%;
+}
+/* Count-section */
+.count-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 5rem;
+}
+.count-icons{
+     
+}
+#pizza-id{
+    color: goldenrod;
+    font-size: 38px;
+    border: 2px goldenrod solid;
+    padding: 30px;
+}
+#pizza-id:hover{
+    background-color: goldenrod;
+    color: black;
+    transition: 900ms ease;
+}
+#pizza-id1 {
+    color: goldenrod;
+    font-size: 38px;
+    border: 2px goldenrod solid;
+    padding: 30px;
+}
+
+#pizza-id1:hover {
+    background-color: goldenrod;
+    color: black;
+    transition: 900ms ease;
+}
+.count-num{
+    font-size: 26px;
+    color: goldenrod;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding-left: 2rem;
+}
+.count-cap{
+    font-size: 20px;
+    color: goldenrod;
+    font-family: "Poppins", sans-serif;
+    /* text-align: center; */
+}
+/* End of Gallery Section */
+
+/* Extra Pizza Section */
+.extra-pizza-section{
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+}
+.extra-container{
+    display: flex;
+}
+.extra-1{
+    padding: 20px;
+}
+.side-img{
+    width: 30rem;
+    height: 470px;
+}
+.extra-img{
+    width: 60%;
+    border-radius: 50%;
+}
+.extra-caption{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    color: aliceblue;
+}
+.extra-text{
+    font-family: "Poppins", sans-serif;
+    color: gray;
+    width: 85%;
+}
+.extra-price{
+    color: goldenrod;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    padding-left: 2rem;
+}
+.extra-link{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 17.5px;
+    font-family: "Poppins", sans-serif;
+    border: 1.5px white solid;
+    padding: 10px;
+}
+.extra-link:hover{
+    background-color: goldenrod;
+    color: black;
+    border: none;
+    transition: 700ms ease;
+}
+/* End of Extra Section */
+
+/* Blog Section */
+.blog-section{
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.blog-container{
+    padding: 30px;
+}
+.blog-head{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: aliceblue;
+    text-align: center;
+}
+.blog-text{
+    font-family: "Poppins", sans-serif;
+    color: gray;
+    text-align: center;
+}
+.blogger{
+    display: flex;
+}
+.blog-img{
+    width: 25rem;
+}
+.blog-date{
+    color: gray;
+    font-family: "Poppins", sans-serif;
+}
+.blog-box-head{
+    font-size: 20px;
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+}
+.blog-box-text{
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 70%;
+}
+/* End of Blog Section */
+/* Map section */
+.info-section{
+    display: flex;
+}
+.map-section{
+    background-color: gainsboro;
+    height: 500px;
+    width: 50%;
+}
+.info-contact{
+    background-color: black;
+    width: 50%;
+    padding: 30px;
+}
+.info-contact-head{
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 28px;
+}
+input{
+    color: gray;
+    font-size: 19px;
+    font-family: "Josefin Sans", sans-serif;
+    padding:30px 70px;
+    /* background-image: url(..//Images/bg_4.jpg); */
+    background-color: black;
+    border: 1.5px solid white;
+}
+::placeholder{
+    color: gray;
+    font-family: "Josefin Sans", sans-serif;
+}
+.info-btn{
+    color: black;
+    background-color: goldenrod;
+    padding: 12px 25px;
+    border: none;
+    font-size: 17px;
+}
+.info-btn:hover{
+    background-color: transparent;
+    color: goldenrod;
+    border: 1.5px goldenrod solid;
+    transition: 800ms ease;
+}
+/* End Of Map/info Section */
+
+/* Footer Section */
+footer{
+    background-color: black;
+    /* height: 400px; */
+}
+.footer-container{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.foot-head{
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18.5px;
+}
+.main-foot-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.foot-text-1{
+    font-family: "Poppins", sans-serif;
+    color: gray;
+    width: 55%;
+}
+.foot-img-container{
+    display: flex;
+}
+.foot-img{
+    width: 25%;
+}
+.fa-calendar-days,
+.fa-user,
+.fa-message {
+    color: gray;
+}
+.foot-caption{
+    font-family: "Josefin Sans", sans-serif;
+    color: aliceblue;
+    letter-spacing: 1.5px;
+    width: 90%;
+}
+.foot-date{
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 10px;
+}
+.month {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: gainsboro;
+}
+.foot-list{
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    color: gray;
+    font-size: 20px;
+}
+.question-list{
+    font-family: "Poppins", sans-serif;
+    color: gray;
+    list-style: none;
+    padding: 10px;
+}
+.fa-location-dot,
+.fa-envelope, .fa-phone {
+    color: gainsboro;
+}
+.foot-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#foot-media {
+    color: gainsboro;
+    background-color: rgb(49, 48, 48);
+    padding: 15px 15px;
+    border-radius: 100%;
+}
+
+#foot-media:hover {
+    background-color: goldenrod;
+    color: black;
+    transition: width 2s, linear, 0.5s;
+}
+.break{
+    display: none;
+}
+.my-id {
+    color: gainsboro;
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Responsive Designs */
+@media (max-width:1280px) {
+    body {
+            overflow-x: hidden;
+        }
+    
+        .welcome-image {
+            height: 29.5rem;
+        }
+}
+@media (max-width:1200px) {
+    body{
+        overflow-x: hidden;
+    }
+    .welcome-image{
+        height: 29.5rem;
+    }
+    .welcome-text-container{
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 29.5rem;
+    padding: 30px;
+}
+    .icon-text{
+    font-family: "Poppins", sans-serif;
+        font-size: 16.5px;
+        width: 90%;
+}
+.extra-text {
+    font-family: "Poppins", sans-serif;
+    color: gray;
+    width: 97%;
+}
+.blog-img {
+    width: 20rem;
+}
+.footer-container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+}
+@media (max-width:1114px) {
+      .no-1{
+    font-size: 18px;
+  color: aliceblue;
+  font-family: "Josefin Sans", sans-serif;
+} 
+ .welcome-image {
+     height: 32.5rem;
+ }
+   .welcome-text-container {
+       background-image: url(..//Images/bg_4.jpg);
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+       width: 100%;
+       height: 32.5rem;
+       padding: 30px;
+   }
+.pizza-info-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.pizza-image-1 {
+    width: 55%;
+}
+.pizza-image-4 {
+    width: 47%;
+    position: relative;
+    right: 20px;
+}
+.pizza-text-3 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 120%;
+}
+
+.pizza-info-2 {
+    position: relative;
+    right: 5px;
+    padding: 15px 10px;
+}
+.pizza-image-22 {
+    width: 50%;
+    position: relative;
+    right: 40px;
+}
+.pizza-image-33 {
+    width: 50%;
+    position: relative;
+    right: 15px;
+}
+
+.pizza-text-33 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+}
+}
+@media (max-width:1024px) {
+    .no-1{
+    font-size: 16px;
+  color: aliceblue;
+  font-family: "Josefin Sans", sans-serif;
+}
+ .welcome-image{
+        height: 90vh;
+    }
+    .welcome-text-container{
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 90vh;
+    padding: 30px;
+}
+.pizza-info-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+.pizza-image-1 {
+    width: 35%;
+}
+.pizza-text-3 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 120%;
+}
+.pizza-info-2 {
+    position: relative;
+    right: 5px;
+    padding: 15px 10px;
+}
+.pizza-image-33 {
+    width: 50%;
+    position: relative;
+    right: 15px;
+}
+.pizza-text-33 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+}
+.extra-text {
+    font-family: "Poppins", sans-serif;
+    color: gray;
+    width: 115%;
+}
+.blog-img {
+    width: 15rem;
+}
+.blog-box-text {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 90%;
+}
+.footer-container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+}
+@media (max-width:912px) {
+      .location{
+       display: flex;
+       padding: 20px;
+       gap: 10px;
+       background-color: black;
+       width: 100%;
+}
+.welcome-text-container {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 45vh;
+    padding: 30px;
+}
+
+.welcome-image {
+    width: 50%;
+    height: 45vh;
+}
+.side-img {
+    width: 25rem;
+    /* height: 470px; */
+}
+.main-menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+#remove{
+    display: none;
+}
+}
+@media (max-width:884px) {
+    .location{
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    background-color: black;
+    width: 100%;
+}
+    .no-1{
+    font-size: 16px;
+  color: aliceblue;
+  font-family: "Josefin Sans", sans-serif;
+}
+.welcome-text-container {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 70vh;
+    padding: 30px;
+}
+
+.welcome-image {
+    width: 50%;
+    height: 70vh;
+}
+#remove{
+    display: none;
+}
+.extra-pizza-section {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 2000px;
+}
+
+.extra-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.extra-1 {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.side-img {
+    width: 100%;
+    height: 470px;
+}
+
+.extra-img {
+    width: 30%;
+    border-radius: 50%;
+}
+ .extra-text {
+     font-family: "Poppins", sans-serif;
+     color: gray;
+     width: 55%;
+ }
+  .extra-price {
+      color: goldenrod;
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      padding-left: 0.5rem;
+  }
+  .extra-link {
+      text-decoration: none;
+      color: aliceblue;
+      font-size: 17.5px;
+      font-family: "Poppins", sans-serif;
+      border: 1.5px white solid;
+      padding: 10px 30px;
+  }
+
+  .extra-link:hover {
+      background-color: goldenrod;
+      color: black;
+      border: none;
+      transition: 700ms ease;
+  }
+}
+@media (max-width:853px) {
+    .location{
+    display: flex;
+    padding: 20px;
+    gap: 5px;
+    background-color: black;
+    width: 100%;
+}
+.welcome-text-container {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+    padding: 30px;
+}
+
+.welcome-image {
+    width: 50%;
+    height: 50vh;
+}
+.pizza-text-4 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 105%;
+}
+.pizza-image-2 {
+    width: 50%;
+    position: relative;
+    right: 2px;
+}
+.pizza-text-22 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 105%;
+}
+}
+@media (max-width:834px) {
+    .no-1 {
+    font-size: 15px;
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.no-2 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+}
+.welcome-text-container {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 65vh;
+    padding: 30px;
+}
+
+.welcome-image {
+    width: 50%;
+    height: 65vh;
+}
+.pizza-image-22 {
+    width: 50%;
+    position: relative;
+    right: 2px;
+}
+.pizza-text-22 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 105%;
+}
+.pizza-text-2 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 130%;
+}
+}
+@media (max-width:820px) {
+    .location{
+    display: flex;
+    padding: 10px;
+    gap: -30px;
+    background-color: black;
+    width: 100%;
+}
+.no-1 {
+    font-size: 15px;
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.no-2 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+}
+.welcome-text-container {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 65vh;
+    padding: 30px;
+}
+
+.welcome-image {
+    width: 50%;
+    height: 65vh;
+}
+.media-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 1rem;
+}
+.fa-facebook, .fa-twitter, .fa-instagram{
+    font-size: 20px;
+}
+.pizza-image-22 {
+    width: 50%;
+    position: relative;
+    right: 2px;
+}
+.pizza-image-2 {
+    width: 50%;
+    position: relative;
+    right: 2px;
+}
+.pizza-text-2 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 130%;
+}
+.pizza-text-22 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 105%;
+}
+.pizza-image-33 {
+    width: 50%;
+    position: relative;
+    right: 7px;
+}
+input {
+    color: gray;
+    font-size: 19px;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 20px 50px;
+    /* background-image: url(..//Images/bg_4.jpg); */
+    background-color: black;
+    border: 1.5px solid white;
+}
+}
+@media (max-width:800px) {
+    #logo{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.bar-nav{
+    width: 100%;
+}
+    .top-ul,
+    .header-list {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: black;
+        z-index: 100;
+    }
+
+    #menuList {
+        display: none;
+    }
+
+    /* .drop-bar{
+    display: none;
+  } */
+    .header-list:nth-child(8),
+    .fa-bars {
+        margin-right: auto;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+        .blog-img {
+            width: 14rem;
+        }
+    #menu-btn2 {
+    transform: translate(-70%,-50%);
+}  
+.welcome-text-container {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 60vh;
+    padding: 30px;
+}
+
+.welcome-image {
+    width: 50%;
+    height: 60vh;
+}
+.pizza-text-33 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 115%;
+}
+.pizza-text-4 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 110%;
+}
+.pizza-image-3 {
+    width: 45%;
+    position: relative;
+    right: -20px;
+}
+.pizza-image-4 {
+    width: 45%;
+    position: relative;
+    right: -20px;
+}
+}
+@media (max-width:768px) {
+        .location{
+    display: flex;
+    padding: 10px;
+    gap: -30px;
+    background-color: black;
+    width: 100%;
+}
+.no-1 {
+    font-size: 13.5px;
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.no-2 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+}
+.welcome-text-container {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+    padding: 30px;
+}
+
+.welcome-image {
+    width: 50%;
+    height: 80vh;
+}
+.count-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 5rem;
+}
+input {
+    color: gray;
+    font-size: 19px;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 20px 40px;
+    /* background-image: url(..//Images/bg_4.jpg); */
+    background-color: black;
+    border: 1.5px solid white;
+}
+}
+@media (max-width:540px) {
+     .intro-text-2 {
+        font-family: "Josefin Sans", sans-serif;
+        color: honeydew;
+        font-size: 28px;
+        text-align: center;
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .intro-text-3 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 25px;
+        color: honeydew;
+        font-weight: 600;
+    }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .location {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 45px;
+            background-color: black;
+            width: 100%;
+        }
+    
+        .no-1 {
+            font-size: 20px;
+            color: aliceblue;
+            font-family: "Josefin Sans", sans-serif;
+        }
+    
+        .no-2 {
+            text-align: center;
+            color: aliceblue;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+        }
+    
+        .social-media {
+            background-color: goldenrod;
+            padding: 10px;
+            width: 100%;
+        }
+    
+        .media-contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding-top: 0.5rem;
+        }
+    
+        .no-2 {
+            text-align: left;
+            color: aliceblue;
+            font-family: "Poppins", sans-serif;
+        }
+        
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .welcome-text-container {
+        background-image: url(..//Images/bg_4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .pizza-image-1, .pizza-image-2, .pizza-image-3,
+.pizza-image-4, .pizza-image-5, .pizza-image-6{
+    width: 50%;
+    height: 230px;
+    position: relative;
+    right: 10px;
+}
+.pizza-info-1, .pizza-info-2, .pizza-info-3,
+.pizza-info-4, .pizza-info-5, .pizza-info-6{
+    padding: 1px 10px;
+
+}
+.pizza-image-head {
+    font-size: 19.5px;
+    width: 150%;
+}
+.pizza-text-1, .pizza-text-2, .pizza-text-3,
+.pizza-text-4, .pizza-text-5, .pizza-text-6{
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    width: 103%;
+}
+.main-menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+   .menu-name {
+       color: gray;
+       font-family: "Josefin Sans", sans-serif;
+       font-size: 18px;
+   }
+   .menu-img {
+       width: 25%;
+       height: 100px;
+       border-radius: 50%;
+   }
+   .main-price {
+       color: goldenrod;
+       font-family: "Poppins", sans-serif;
+       font-size: 15px;
+       position: relative;
+       right: 10px;
+   }
+   #remove-gallery{
+    display: none;
+   }
+   .gallery-section {
+       background-image: url(..//Images/bg_2.jpg);
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+       height: 750px;
+   }
+
+   .gallery-container {
+       position: absolute;
+       /* width: 100%; */
+       height: 750px;
+       background: rgba(0, 0, 0, 0.8);
+       background-attachment: fixed;
+   }
+        .count-container {
+            display: grid;
+            place-items: center;
+            grid-template-columns: auto auto;
+            gap: 50px;
+            padding-top: 3.5rem;
+        }
+   .gallery-img {
+       width: 50%;
+   }
+   .blogger {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .blog-img {
+       width: 17rem;
+   }
+        .info-section {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .map-section {
+            background-color: gainsboro;
+            height: 400px;
+            width: 100%;
+        }
+    
+        .info-contact {
+            background-color: black;
+            width: 100%;
+            padding: 30px;
+        }
+    
+        input {
+            color: gray;
+            font-size: 19px;
+            font-family: "Josefin Sans", sans-serif;
+            padding: 30px 70px;
+            /* background-image: url(..//Images/bg_4.jpg); */
+            background-color: black;
+            border: 1.5px solid white;
+        }
+         .foot-text-1 {
+             font-family: "Poppins", sans-serif;
+             color: gray;
+             width: 100%;
+         }
+}
+
+@media (max-width:480px) {
+    body {
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #logo {
+        transform: translate(5%, 25%);
+    }
+/* 
+    #menuList {
+        display: none;
+    } */
+
+
+    #menu-btn2 {
+        transform: translate(-100%, -50%);
+    }
+
+    .intro-section {
+        background-image: url(..//Images/bg_3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 620px;
+        animation: animate 16s infinite;
+    }
+
+    .intro-text-2 {
+        font-family: "Josefin Sans", sans-serif;
+        color: honeydew;
+        font-size: 27px;
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .intro-text-3 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 25px;
+        color: honeydew;
+        font-weight: 600;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 45px;
+        background-color: black;
+        width: 100%;
+    }
+.no-1 {
+    font-size: 20px;
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.no-2 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+    .social-media {
+        background-color: goldenrod;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .media-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding-top: 0.5rem;
+    }
+
+    .no-2 {
+        text-align: left;
+        color: aliceblue;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .welcome-text-container {
+        background-image: url(..//Images/bg_4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-1 {
+        display: grid;
+        place-items: center;
+    }
+
+    .fa-burger,
+    .fa-truck,
+    .fa-utensils {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 1.5px black solid;
+        font-size: 30px;
+        padding: 35px 35px;
+    }
+
+    .icon-text {
+        font-family: "Poppins", sans-serif;
+        font-size: 13.5px;
+        width: 90%;
+    }
+
+    .pizza-info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pizza-text-1 {
+        color: gray;
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+    }
+
+    .pizza-text-3 {
+        color: gray;
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+    }
+.pizza-image-3 {
+    width: 50%;
+    position: relative;
+    right: 2px;
+}
+    .pizza-image-4 {
+        width: 50%;
+        position: relative;
+        right: 2px;
+    }
+.pizza-image-1 {
+    width: 50%;
+    position: relative;
+    right: 20px;
+}
+    .pizza-image-22 {
+        width: 50%;
+        position: relative;
+        right: 20px;
+    }
+
+    .pizza-info-2 {
+        position: relative;
+        right: 10px;
+        padding: 15px 10px;
+    }
+
+    .pizza-text-22 {
+        color: gray;
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+    }
+.pizza-text-33 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 110%;
+}
+    .pizza-image-33 {
+        width: 50%;
+        position: relative;
+        right: 20px;
+    }
+
+    .main-menu {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+
+    #remove-gallery {
+        display: none;
+    }
+
+    .gallery-img {
+        width: 50%;
+    }
+
+    /* .gallery-container {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    background: rgba(0, 0, 0, 0.8);
+    background-attachment: fixed;
+} */
+    .count-container {
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        padding-top: 0.5rem;
+    }
+
+    #remove {
+        display: none;
+    }
+
+    .extra-pizza-section {
+        background-image: url(..//Images/bg_4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 1750px;
+    }
+
+    .extra-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .extra-1 {
+        display: grid;
+        place-items: center;
+        padding: 20px;
+    }
+
+    .extra-text {
+        font-family: "Poppins", sans-serif;
+        color: gray;
+        width: 85%;
+    }
+
+    .extra-price {
+        color: goldenrod;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        padding-left: 0.5rem;
+    }
+
+    .side-img {
+        width: 30rem;
+        height: 350px;
+    }
+
+    .extra-img {
+        width: 40%;
+        border-radius: 50%;
+    }
+
+    .blogger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-img {
+        width: 17rem;
+    }
+
+    .blog-box-text {
+        color: gray;
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+    }
+
+    .info-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map-section {
+        background-color: gainsboro;
+        height: 400px;
+        width: 100%;
+    }
+
+    .info-contact {
+        background-color: black;
+        width: 100%;
+        padding: 30px;
+    }
+
+    input {
+        color: gray;
+        font-size: 19px;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 30px 50px;
+        /* background-image: url(..//Images/bg_4.jpg); */
+        background-color: black;
+        border: 1.5px solid white;
+    }
+
+    .footer-container {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 15px;
+    }
+
+    .foot-text-1 {
+        font-family: "Poppins", sans-serif;
+        color: gray;
+        width: 100%;
+    }
+
+    .foot-caption {
+        font-family: "Josefin Sans", sans-serif;
+        color: aliceblue;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+
+    .break {
+        display: block;
+    }
+
+    .my-id {
+        color: gainsboro;
+        font-size: 16px;
+        font-family: "Josefin Sans", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:430px) {
+      .intro-text-2{
+       font-family: "Josefin Sans", sans-serif;
+        color: #f0fff0;
+        font-size: 24px;
+        text-align: center;
+        font-weight: 600;
+}
+.intro-text-3{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    color: honeydew;
+    font-weight: 600;
+} 
+   .welcome-text-container {
+       background-image: url(..//Images/bg_4.jpg);
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+       width: 100%;
+       height: 80vh;
+       padding: 30px;
+   }
+   .pizza-info-1, .pizza-info-2, .pizza-info-3 {
+        position: relative;
+        right: 5px;
+        padding: 15px 1px;
+    }
+    .pizza-image-1, .pizza-image-2, .pizza-image-3 {
+        position: relative;
+        right: 15px;
+    }
+    .pizza-info-4, .pizza-info-5, .pizza-info-6 {
+        position: relative;
+        right: 5px;
+        padding: 15px 1px;
+    }
+    .pizza-text-2, .pizza-text-4{
+       width: 100%;
+    }
+      .extra-text {
+        font-family: "Poppins", sans-serif;
+        color: gray;
+        width: 75%;
+    }
+}
+@media (max-width:414px) {
+    .welcome-text-container {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+    padding: 30px;
+}
+}
+@media (max-width:412px) {
+    .welcome-text-container {
+            background-image: url(..//Images/bg_4.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            width: 100%;
+            height: 85vh;
+            padding: 30px;
+        }
+    .pizza-text-1, .pizza-text-2, .pizza-text-3,
+    .pizza-text-4, .pizza-text-5, .pizza-text-6{
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+#text-1-id{
+    width: 145%;
+}
+.pizza-image-head{
+    width: 150%;
+}
+ .pizza-text-3{
+     color: gray;
+     font-family: "Poppins", sans-serif;
+     width: 120%;
+ }
+ .pizza-info-4, .pizza-info-5, .pizza-info-6{
+    position: relative;
+    right: 20px;
+ }
+.pizza-text-4, .pizza-text-5, .pizza-text-6{
+    width: 115%;
+ }
+ .pizza-image-3, .pizza-image-2, .pizza-image-1 {
+     width: 50%;
+     position: relative;
+     right: 10px;
+ }
+ .pizza-image-4, .pizza-image-5, .pizza-image-6 {
+     width: 50%;
+     position: relative;
+     left: 15px;
+ }
+  .icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  }
+  .count-cap {
+      font-size: 14px;
+      color: goldenrod;
+      font-family: "Poppins", sans-serif;
+      /* text-align: center; */
+  }
+
+  .count-num {
+      font-size: 18px;
+      color: goldenrod;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      padding-left: 2rem;
+  }
+}
+@media (max-width:393px) {
+     .welcome-text-container {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+} 
+.pizza-text-4,
+.pizza-text-5,
+.pizza-text-6 {
+    width: 105%;
+}
+}
+@media (max-width:390px) {
+    .welcome-text-container {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+}
+.pizza-info-1, .pizza-info-2, .pizza-info-3 {
+        position: relative;
+        left: 12px;
+        /* padding: 15px 1px; */
+    }
+    .pizza-text-1, .pizza-text-2, .pizza-text-3 {
+      width: 110%;
+    }
+         .pizza-text-4,
+         .pizza-text-5,
+         .pizza-text-6 {
+             width: 110%;
+         }
+}
+@media (max-width:395px) {
+    .intro-text-2{
+    font-family: "Josefin Sans", sans-serif;
+        color: honeydew;
+        font-size: 22px;
+        font-weight: 600;
+}
+.intro-text-3{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    color: honeydew;
+    font-weight: 600;
+}
+.link-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.intro-link{
+    text-decoration: none;
+    font-size: 26px;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    border: 1.5px solid gainsboro;
+    padding: 5px 10px;
+    display: grid;
+    place-content: center;
+}
+ .icon-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ .pizza-text-3 {
+     color: gray;
+     font-family: "Poppins", sans-serif;
+     width: 125%;
+ }
+   input {
+       color: gray;
+       font-size: 19px;
+       font-family: "Josefin Sans", sans-serif;
+       padding: 20px 45px;
+       /* background-image: url(..//Images/bg_4.jpg); */
+       background-color: black;
+       border: 1.5px solid white;
+   }
+}
+@media (max-width:375px) {
+    .welcome-text-container {
+        background-image: url(..//Images/bg_4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        height: 120vh;
+        padding: 30px;
+    }
+        .intro-text-2{
+    font-family: "Josefin Sans", sans-serif;
+        color: honeydew;
+        font-size: 20px;
+        width: 95%;
+        font-weight: 600;
+}
+.intro-text-3{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    color: honeydew;
+    font-weight: 600;
+}
+.link-container {
+    display: flex;
+    gap: 10px;
+}
+
+.intro-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    border: 1.5px solid gainsboro;
+    padding: 5px 10px;
+}
+
+.intro-link:hover {
+    background-color: black;
+    color: aliceblue;
+    transition: 900ms ease;
+}
+.pizza-image-head {
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    width: 150%;
+    /* text-align: center; */
+}
+ .pizza-info-1, .pizza-info-2, .pizza-info-3 {
+        position: relative;
+        left: 5px;
+        padding: 15px 1px;
+    }
+
+     .pizza-text-1, .pizza-text-2, .pizza-text-3 {
+       width: 115%;
+    }
+        .pizza-text-4,
+        .pizza-text-5,
+        .pizza-text-6 {
+            width: 115%;
+        }
+  .count-container {
+      display: grid;
+      place-items: center;
+      grid-template-columns: auto auto;
+      gap: 20px;
+      padding-top: 0.5rem;
+  }
+        .extra-text {
+            font-family: "Poppins", sans-serif;
+            color: gray;
+            width: 80%;
+        }
+    input {
+        color: gray;
+        font-size: 19px;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 20px 30px;
+        /* background-image: url(..//Images/bg_4.jpg); */
+        background-color: black;
+        border: 1.5px solid white;
+    }
+}
+@media (max-width:360px) {
+    #menu-btn2 {
+        transform: translate(-100%, -50%);
+    }
+
+    .link-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .intro-text-2 {
+        font-family: "Josefin Sans", sans-serif;
+        color: rgb(247, 255, 247);
+        font-size: 27px;
+        width: 100%;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .intro-text-3 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 25px;
+        color: honeydew;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .intro-link {
+        text-decoration: none;
+        font-size: 20px;
+        color: aliceblue;
+        font-family: "Poppins", sans-serif;
+        border: 1.5px solid gainsboro;
+        padding: 5px 10px;
+        display: grid;
+        place-content: center;
+    }
+
+    .intro-link:hover {
+        background-color: black;
+        color: aliceblue;
+        transition: 900ms ease;
+    }
+.welcome-text-container {
+    background-image: url(..//Images/bg_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 120vh;
+    padding: 30px;
+}
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .icon-1 {
+        display: grid;
+        place-items: center;
+    }
+
+    .fa-burger,
+    .fa-truck,
+    .fa-utensils {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 1.5px black solid;
+        font-size: 30px;
+        padding: 30px 30px;
+    }
+
+    .icon-text {
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        width: 90%;
+    }
+.pizza-text-1, .pizza-text-2, .pizza-text-3{
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+    .pizza-info-1, .pizza-info-2, .pizza-info-3 {
+        position: relative;
+        left: 5px;
+        padding: 15px 1px;
+    }
+
+    #remove {
+        display: none;
+    }
+
+    .menu-img {
+        width: 35%;
+        border-radius: 50%;
+    }
+
+    .menu-name {
+        color: gray;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 18px;
+    }
+
+    .gallery-section {
+        background-image: url(..//Images/bg_2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        height: 720px;
+    }
+
+    .gallery-container {
+        position: absolute;
+        width: 100%;
+        height: 720px;
+        background: rgba(0, 0, 0, 0.8);
+        background-attachment: fixed;
+    }
+
+    .count-container {
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        padding-left: 1rem;
+        padding-top: 5rem;
+    }
+      .extra-text {
+        font-family: "Poppins", sans-serif;
+        color: gray;
+        width: 75%;
+    }
+}
+/* @media (max-width:360px) {
+    .pizza-text-1{
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 115%;
+}
+.pizza-text-2 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 115%;
+}
+.pizza-text-3 {
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    width: 115%;
+}
+} */
+ @media (max-width:344px) {
+     .intro-text-2 {
+        font-family: "Josefin Sans", sans-serif;
+        color: honeydew;
+        font-size: 24px;
+        width: 95%;
+        font-weight: 600;
+    }
+
+    .intro-text-3 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 22px;
+        width: 100%;
+        color: honeydew;
+        font-weight: 600;
+    }
+ }
+@media (max-width:320px) {
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #menuList {
+        display: none;
+    }
+
+    .intro-section {
+        background-image: url(..//Images/bg_3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 620px;
+        animation: animate 16s infinite;
+    }
+
+    @keyframes animate {
+
+        0%,
+        100% {
+            background-image: url(..//Images/bg_3.jpg);
+            width: 100%;
+        }
+
+        25% {
+            background-image: url(..//Images/bg_1.jpg);
+            width: 100%;
+        }
+
+        50% {
+            background-image: url(..//Images/gallery-3.jpg);
+            width: 100%;
+        }
+
+        75% {
+            background-image: url(..//Images/image_5.jpg);
+            width: 100%;
+        }
+    }
+
+    .side-ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: black;
+        width: 250px;
+        height: 100vh;
+        color: aliceblue;
+        z-index: 77;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+
+    .side-list {
+        list-style: none;
+        width: 100%;
+        /* display: block; */
+    }
+
+    .side-link {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        letter-spacing: 0.5px;
+    }
+
+    .side-link:hover {
+        background-color: goldenrod;
+        color: rgb(0, 0, 0);
+        letter-spacing: 3px;
+        transition: 700ms ease;
+        /* width: 100%; */
+    }
+
+    .intro-text-2 {
+        font-family: "Josefin Sans", sans-serif;
+        color: honeydew;
+        font-size: 22px;
+        width: 95%;
+        font-weight: 600;
+    }
+
+    .intro-text-3 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 20px;
+        color: honeydew;
+        font-weight: 600;
+    }
+
+    .link-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .intro-link {
+        text-decoration: none;
+        font-size: 20px;
+        color: aliceblue;
+        font-family: "Poppins", sans-serif;
+        border: 1.5px solid gainsboro;
+        padding: 5px 10px;
+        display: grid;
+        place-content: center;
+    }
+
+    .intro-link:hover {
+        background-color: black;
+        color: aliceblue;
+        transition: 900ms ease;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 45px;
+        background-color: black;
+        width: 100%;
+    }
+
+    .social-media {
+        background-color: goldenrod;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .media-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding-top: 0.5rem;
+    }
+
+    .no-2 {
+        text-align: left;
+        color: aliceblue;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .welcome-text-container {
+        background-image: url(..//Images/bg_4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        height: 220vh;
+        padding: 30px;
+    }
+
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-text {
+        font-family: "Poppins", sans-serif;
+        font-size: 16.5px;
+        width: 115%;
+    }
+
+    .hot-pizza-section {
+        background-image: url(..//Images/bg_4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 20px;
+    }
+
+    .pizza-info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+ .pizza-info-3 {
+     position: relative;
+     right: 1px;
+     padding: 15px 1px;
+ }
+    .pizza-image-head {
+        color: aliceblue;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 22px;
+        width: 100vw;
+        /* text-align: center; */
+    }
+
+    .pizza-figure {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        right: 10px;
+    }
+
+    .pizza-image-1 {
+        width: 50%;
+        height: 200px;
+         position: relative;
+         right: 20px; 
+    }
+
+    .pizza-text-1 {
+        color: gray;
+        font-family: "Poppins", sans-serif;
+        width: 45vw;
+    }
+
+    .pizza-text-2 {
+        color: gray;
+        font-family: "Poppins", sans-serif;
+        width: 45vw;
+    }
+
+    .pizza-text-3 {
+        color: gray;
+        font-family: "Poppins", sans-serif;
+        width: 45vw;
+    }
+
+    .pizza-text-4 {
+        color: gray;
+        font-family: "Poppins", sans-serif;
+        width: 40%;
+    }
+
+    .pizza-text-22 {
+        color: gray;
+        font-family: "Poppins", sans-serif;
+        width: 50%;
+    }
+
+    .pizza-text-33 {
+        color: gray;
+        font-family: "Poppins", sans-serif;
+        width: 50%;
+    }
+    .pizza-image-3 {
+    width: 50%;
+    position: relative;
+    right: 185px;
+}
+.pizza-image-2 {
+    width: 50%;
+    position: relative;
+    right: 185px;
+}
+    .pizza-image-4 {
+        width: 50%;
+        height: 200px;
+        position: relative;
+        right: 180px;
+    }
+
+    .pizza-image-22 {
+        width: 50%;
+        height: 200px;
+        /* position: relative;
+        right: 15px; */
+    }
+
+    .pizza-image-33 {
+        width: 55%;
+        height: 200px;
+        /* position: relative;
+        right: 15px; */
+    }
+
+    .pizza-info-2 {
+        position: relative;
+        right: 15px;
+        padding: 15px 10px;
+    }
+
+    .main-menu {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+
+    .gallery-section {
+        background-image: url(..//Images/bg_2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        height: 700px;
+    }
+
+    .gallery-container {
+        position: absolute;
+        width: 100%;
+        height: 700px;
+        background: rgba(0, 0, 0, 0.8);
+        background-attachment: fixed;
+    }
+
+    #remove {
+        display: none;
+    }
+.menu-1-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    width: 97%;
+    color: gray;
+}
+    .menu-img {
+        width: 35%;
+        border-radius: 50%;
+    }
+
+    .menu-name {
+        color: gray;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 16px;
+    }
+
+    .internal-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        padding: 20px;
+    }
+
+    .gallery-img {
+        width: 50%;
+    }
+
+    #remove-gallery {
+        display: none;
+    }
+.main-price {
+    color: goldenrod;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    position: relative;
+    right: 0.75rem;
+}
+    .count-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        place-items: center;
+        margin: auto;
+        gap: 50px;
+        padding-top: 2rem;
+        padding-left: 1.5rem;
+    }
+.count-cap {
+    font-size: 14px;
+    color: goldenrod;
+    font-family: "Poppins", sans-serif;
+    /* text-align: center; */
+}
+.count-num {
+    font-size: 21px;
+    color: goldenrod;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding-left: 2rem;
+}
+    .extra-pizza-section {
+        background-image: url(..//Images/bg_4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 1750px;
+    }
+
+    .extra-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-img {
+        width: 20rem;
+        height: 300px;
+    }
+
+    .extra-1 {
+        display: grid;
+        place-items: center;
+        padding: 20px;
+    }
+
+    .extra-text {
+        font-family: "Poppins", sans-serif;
+        color: gray;
+        width: 85%;
+    }
+
+    .extra-price {
+        color: goldenrod;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        padding-left: 0.5rem;
+    }
+
+    .blogger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-img {
+        width: 15rem;
+    }
+
+    .blog-box-text {
+        color: gray;
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+    }
+
+    .info-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map-section {
+        background-color: gainsboro;
+        height: 500px;
+        width: 100%;
+    }
+
+    .info-contact {
+        background-color: black;
+        width: 100%;
+        padding: 30px;
+    }
+
+    input {
+        color: gray;
+        font-size: 19px;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 20px 10px;
+        /* background-image: url(..//Images/bg_4.jpg); */
+        background-color: black;
+        border: 1.5px solid white;
+    }
+
+    .footer-container {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 15px;
+    }
+
+    .foot-text-1 {
+        font-family: "Poppins", sans-serif;
+        color: gray;
+        width: 100%;
+    }
+
+    .foot-caption {
+        font-family: "Josefin Sans", sans-serif;
+        color: aliceblue;
+        letter-spacing: 1px;
+        width: 115%;
+    }
+
+    .break {
+        display: block;
+    }
+
+    .my-id {
+        color: gainsboro;
+        font-size: 16px;
+        font-family: "Josefin Sans", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

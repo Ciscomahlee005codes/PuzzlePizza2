@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"referrerpolicy="no-referrer"/>
+      <link rel="stylesheet" href="Css/menu.css">
+       <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Pizza Puzzle (Menu Page)</title>
+</head>
+<body>
+     <header>
+     <nav class="bar-nav">
+         <ul class="top-ul">
+           <li class="header-list1" id="logo"><i class="fa-solid fa-pizza-slice"><h5>Puzzle</h5></i><h6>Pizza</h6></li>
+          <div id="menuList">
+             <li class="header-list">
+            <a class="header-link" href="index.html" id="link1">Home</a>
+          </li>
+          <li class="header-list">
+            <a class="header-link active-link" href="#" id="link1">Menu</a>
+          </li>
+          <li class="header-list">
+            <a class="header-link" href="service.html" id="link1">Services</a>
+          </li>
+          <li class="header-list">
+            <a class="header-link" href="blog.html" id="link1">Blog</a>
+          </li>
+          <li class="header-list">
+            <a class="header-link" href="about.html" id="link1">About</a>
+          </li>
+          <li class="header-list">
+            <a class="header-link" href="contact.html" id="link1">Contact</a>
+          </li>
+          </div>
+          <li class="header-list" onclick="showMenuBar()" id="menu-btn">
+            <a class="header-link" href="#"><i class="fa-solid fa-bars"></i></a>
+          </li>
+          <li class="header-list" onclick="hideSideBar()" id="menu-btn2">
+            <i class="fa-solid fa-xmark"></i>
+          </li>
+        </ul>
+         <!-- <div class="search-container">
+        <input type="text" name="" id="searchBar" placeholder="Search">
+        <div class="search-btn">
+              <i class="fa fa-search"></i>
+        </div>
+       </div> -->
+     </nav>
+   </header>
+    <section class="intro-section">
+      <div class="section-container">
+        <div class="text-container">
+          <p class="intro-text-1">Welcome to</p><br><br>
+          <p class="intro-text-2">Our Menu</p>
+        </div>
+        
+      </div>
+    </section>
+    <!-- Back to Top Scroll Button -->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+     <section class="menu-section">
+        <h3 class="pizza-head">OUR MENU</h3><br>
+        <p class="pizza-head-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p><br><br>
+         <div class="pizza-info-container">
+            <figure class="pizza-figure"> 
+                <img class="pizza-image-1" src="./Images/pizza-8.jpg" alt="">
+                <div class="pizza-info-1">
+                    <h3 class="pizza-image-head">Italian Pizza</h3>
+                <p class="pizza-text-1">Far far away, behind  the word mountains, far from the countries Vokalia and Consonantia</p><br>
+                <div class="price-link">
+                    <span class="pizza-price">$2.90</span>
+                    <a class="pizza-btn" href="">Order</a>
+                </div>
+                </div>
+            </figure>
+
+            <figure class="pizza-figure">
+                <img class="pizza-image-2" src="./Images/pizza-7.jpg" alt="">
+                <div class="pizza-info-2">
+                    <h3 class="pizza-image-head">Italian Pizza</h3>
+                <p class="pizza-text-2">Far far away, behind  the word mountains, far from the countries Vokalia and Consonantia</p><br>
+                <div class="price-link">
+                    <span class="pizza-price">$2.90</span>
+                    <a class="pizza-btn" href="">Order</a>
+                </div>
+                </div>
+            </figure>
+
+            <figure class="pizza-figure">
+                <img class="pizza-image-3" src="./Images/pizza-5.jpg" alt="">
+                <div class="pizza-info-3">
+                    <h3 class="pizza-image-head" id="head3">Italian Pizza</h3>
+                <p class="pizza-text-3">Far far away, behind  the word mountains, far from the countries Vokalia and Consonantia</p><br>
+                <div class="price-link">
+                    <span class="pizza-price">$2.90</span>
+                    <a class="pizza-btn" href="">Order</a>
+                </div>
+                </div>
+            </figure>  
+
+             <figure class="pizza-figure">
+                <div class="pizza-info-4">
+                    <h3 class="pizza-image-head">Italian Pizza</h3>
+                <p class="pizza-text-4">Far far away, behind  the word mountains, far from the countries Vokalia and Consonantia</p><br>
+                <div class="price-link">
+                    <span class="pizza-price">$2.90</span>
+                    <a class="pizza-btn" href="">Order</a>
+                </div>
+                </div>
+                <img class="pizza-image-4" src="./Images/pizza-7.jpg" alt="">
+            </figure>
+
+            <figure class="pizza-figure">
+                <div class="pizza-info-5">
+                    <h3 class="pizza-image-head">Italian Pizza</h3>
+                <p class="pizza-text-5">Far far away, behind  the word mountains, far from the countries Vokalia and Consonantia</p><br>
+                <div class="price-link">
+                    <span class="pizza-price">$2.90</span>
+                    <a class="pizza-btn" href="">Order</a>
+                </div>
+                </div>
+                <img class="pizza-image-5" src="./Images/pizza-2.jpg" alt="">
+            </figure>
+
+            <figure class="pizza-figure">
+                <div class="pizza-info-6">
+                    <h3 class="pizza-image-head">Italian Pizza</h3>
+                <p class="pizza-text-6">Far far away, behind  the word mountains, far from the countries Vokalia and Consonantia</p><br>
+                <div class="price-link">
+                    <span class="pizza-price">$2.90</span>
+                    <a class="pizza-btn" href="">Order</a>
+                </div>
+                </div>
+                <img class="pizza-image-6" src="./Images/pizza-5.jpg" alt="">
+            </figure>  
+         </div>
+
+        </div>
+    </section>
+    <!--End of Hot Pizza Section -->
+    <!-- Menu List Section -->
+     <section class="menu-list-section">
+      <div class="menu-list-container">
+        <h2 class="menu-heading">OUR MENU PRICING</h2>
+        <div class="menu-icon">
+                <span class="dot-1">.................</span> <i class="fa-solid fa-diamond"></i> <i class="fa-solid fa-gem"></i><i class="fa-solid fa-diamond"></i> <span class="dot-1">.................</span>
+          </div><br>
+             <p class="menu-intro-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p><br><br>
+
+             <div class="main-menu">
+               <div class="menu-1">
+                    <img class="menu-img" src="./Images/pizza-1.jpg" alt="">
+                    <div class="internal-menu">
+                      <div class="menu-price">
+                      <h5 class="menu-name">Italian Pizza</h5>
+                      <span class="menu-dot">....................<span id="remove">..................</span>
+                      </span>
+                      <span class="main-price">$20.00</span>
+                    </div>
+                       <p class="menu-1-text">A small river named Duden flows by their place and supplies</p>
+                    </div>
+                </div>
+
+                 <div class="menu-1">
+                    <img class="menu-img" src="./Images/pizza-2.jpg" alt="">
+                    <div class="internal-menu">
+                      <div class="menu-price">
+                      <h5 class="menu-name">Italian Pizza</h5>
+                      <span class="menu-dot">.....................<span id="remove">..................</span>
+                      </span>
+                      <span class="main-price">$20.00</span>
+                    </div>
+                       <p class="menu-1-text">A small river named Duden flows by their place and supplies</p>
+                    </div>
+                </div>
+
+                 <div class="menu-1">
+                    <img class="menu-img" src="./Images/pizza-3.jpg" alt="">
+                    <div class="internal-menu">
+                      <div class="menu-price">
+                      <h5 class="menu-name">Italian Pizza</h5>
+                      <span class="menu-dot">.....................<span id="remove">....................</span>
+                      </span>
+                      <span class="main-price">$20.00</span>
+                    </div>
+                       <p class="menu-1-text">A small river named Duden flows by their place and supplies</p>
+                    </div>
+                </div>
+
+                 <div class="menu-1">
+                    <img class="menu-img" src="./Images/pizza-5.jpg" alt="">
+                    <div class="internal-menu">
+                      <div class="menu-price">
+                      <h5 class="menu-name">Italian Pizza</h5>
+                      <span class="menu-dot">.....................<span id="remove">....................</span>
+                      </span>
+                      <span class="main-price">$20.00</span>
+                    </div>
+                       <p class="menu-1-text">A small river named Duden flows by their place and supplies</p>
+                    </div>
+                </div>
+
+                 <div class="menu-1">
+                    <img class="menu-img" src="./Images/pizza-6.jpg" alt="">
+                    <div class="internal-menu">
+                      <div class="menu-price">
+                      <h5 class="menu-name">Italian Pizza</h5>
+                      <span class="menu-dot">......................<span id="remove">...................</span>
+                      </span>
+                      <span class="main-price">$20.00</span>
+                    </div>
+                       <p class="menu-1-text">A small river named Duden flows by their place and supplies</p>
+                    </div>
+                </div>
+
+                 <div class="menu-1">
+                    <img class="menu-img" src="./Images/pizza-7.jpg" alt="">
+                    <div class="internal-menu">
+                      <div class="menu-price">
+                      <h5 class="menu-name">Italian Pizza</h5>
+                      <span class="menu-dot">.....................<span id="remove">..................</span>
+                      </span>
+                      <span class="main-price">$20.00</span>
+                    </div>
+                       <p class="menu-1-text">A small river named Duden flows by their place and supplies</p>
+                    </div>
+                </div>
+             </div>
+      </div>
+     </section>
+     <!-- End of Menu List Section -->
+      <section class="another-section"><br><br>
+        <ul class="product-ul">
+                    <button class="product-list" id="active-menu1" onclick="showPizzaPage()">Pizza</button>
+                    <button class="product-list" id="active-menu2" onclick="showDrinkPage()">Drinks</button>
+                    <button class="product-list" id="active-menu3" onclick="showBurgerPage()">Burger</button>
+                    <button class="product-list" id="active-menu4" onclick="showPastaPage()">Pasta</button>
+                </ul><br>
+        <div class="another-container-1" id="pizza-page">
+          <div class="another-container">
+            <div class="another-div"> <img class="another-img" src="./Images/about.jpg" alt=""></div>
+            <div class="another-div-1"> 
+                <img class="another-pizza" src="./Images/pizza-1.jpg" alt=""><br>
+            <figcaption class="another-cap">Itallian Pizza</figcaption><br><br>
+            <p class="another-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p><br>
+            <span class="another-price">$2.90</span><br><br>
+            <a class="another-link" href="#">Add to Cart</a>
+            </div>
+
+             <div class="another-div-1">
+                <img class="another-pizza" src="./Images/pizza-8.jpg" alt=""><br>
+            <figcaption class="another-cap">German Pizza</figcaption><br><br>
+            <p class="another-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p><br>
+            <span class="another-price">$2.90</span><br><br>
+            <a class="another-link" href="#">Add to Cart</a>
+            </div>
+
+             <div class="another-div-1">
+                <img class="another-pizza" src="./Images/pizza-5.jpg" alt=""><br>
+            <figcaption class="another-cap">Spanish Pizza</figcaption><br><br>
+            <p class="another-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p><br>
+            <span class="another-price">$2.90</span><br><br>
+            <a class="another-link" href="#">Add to Cart</a>
+            </div>
+        </div>
+        </div>
+       <div class="another-container-1"id="drinks-page">
+         <div class="drinks-container">
+           <div class="another-div"> <img class="another-img" src="./Images/about.jpg" alt=""></div>
+          <div class="another-div-1"> 
+                <img class="another-pizza" src="./Images/drink-1.jpg" alt=""><br>
+            <figcaption class="another-cap" id="lemonade">Lemonade</figcaption><br>
+            <p class="another-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p><br>
+            <span class="another-price">$2.90</span><br><br>
+            <a class="another-link" href="#">Add to Cart</a>
+            </div>
+
+            <div class="another-div-1"> 
+                <img class="another-pizza" src="./Images/drink-5.jpg" alt=""><br>
+            <figcaption class="another-cap" id="vodka">Vodka</figcaption><br>
+            <p class="another-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p><br>
+            <span class="another-price">$2.90</span><br><br>
+            <a class="another-link" href="#">Add to Cart</a>
+            </div>
+
+            <div class="another-div-1"> 
+                <img class="another-pizza" src="./Images/drink-4.jpg" alt=""><br>
+            <figcaption class="another-cap" id="beer">Lager Beer</figcaption><br>
+            <p class="another-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p><br>
+            <span class="another-price">$2.90</span><br><br>
+            <a class="another-link" href="#">Add to Cart</a>
+            </div>
+        </div>
+       </div>
+
+         <div class="another-container-1"id="burger-page">
+           <div class="burger-container" >
+           <div class="another-div"> <img class="another-img" src="./Images/about.jpg" alt=""></div>
+          <div class="another-div-1"> 
+                <img class="another-pizza" src="./Images/burger-2.jpg" alt=""><br>
+            <figcaption class="another-cap" id="l-burger">Lebanon Burger</figcaption><br>
+            <p class="another-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p><br>
+            <span class="another-price">$2.90</span><br><br>
+            <a class="another-link" href="#">Add to Cart</a>
+            </div>
+
+            <div class="another-div-1"> 
+                <img class="another-pizza" src="./Images/burger-1.jpg" alt=""><br>
+            <figcaption class="another-cap" id="krabby">Krabby Party</figcaption><br>
+            <p class="another-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p><br>
+            <span class="another-price">$2.90</span><br><br>
+            <a class="another-link" href="#">Add to Cart</a>
+            </div>
+
+            <div class="another-div-1"> 
+                <img class="another-pizza" src="./Images/burger-3.jpg" alt=""><br>
+            <figcaption class="another-cap" id="swiss-burger">Swiss Burger</figcaption><br>
+            <p class="another-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p><br>
+            <span class="another-price">$2.90</span><br><br>
+            <a class="another-link" href="#">Add to Cart</a>
+            </div>
+        </div>
+         </div>
+
+        <div class="another-container-"id="pasta-page">
+            <div class="pasta-container">
+           <div class="another-div"> <img class="another-img" src="./Images/about.jpg" alt=""></div>
+          <div class="another-div-1"> 
+                <img class="another-pizza" src="./Images/pasta-3.jpg" alt=""><br>
+            <figcaption class="another-cap">Chinese Pasta</figcaption><br>
+            <p class="another-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p><br>
+            <span class="another-price">$2.90</span><br><br>
+            <a class="another-link" href="#">Add to Cart</a>
+            </div>
+
+            <div class="another-div-1"> 
+                <img class="another-pizza" src="./Images/pasta-2.jpg" alt=""><br>
+            <figcaption class="another-cap" id="krabby">Korean Pasta</figcaption><br>
+            <p class="another-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p><br>
+            <span class="another-price">$2.90</span><br><br>
+            <a class="another-link" href="#">Add to Cart</a>
+            </div>
+
+            <div class="another-div-1"> 
+                <img class="another-pizza" src="./Images/pasta-1.jpg" alt=""><br>
+            <figcaption class="another-cap" id="macroni">Macroni</figcaption><br>
+            <p class="another-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p><br>
+            <span class="another-price">$2.90</span><br><br>
+            <a class="another-link" href="#">Add to Cart</a>
+            </div>
+        </div>
+        </div>
+      </section>
+    
+        <!-- Footer Section -->
+     <footer>
+        <div class="footer-container">
+            <div class="foot-1">
+                <h3 class="foot-head">ABOUT US</h3><br>
+                <p class="foot-text-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+
+            <div class="foot-1">
+                <h3 class="foot-head">RECENT BLOG</h3><br>
+               <div class="main-foot-container">
+                  <div class="foot-img-container">
+                    <img class="foot-img" src="./Images/image_1.jpg" alt=""> 
+                    <div class="foot-date">
+                        <figcaption class="foot-caption">Even the all-powerful Pointing has no control about</figcaption>
+                       <div class="internal-foot-date">
+                         <i class="fa-solid fa-calendar-days"></i><span class="month">Sept 15, 2024</span> 
+                        <i class="fa-solid fa-user"></i><span class="month">Admin</span>
+                        <i class="fa-solid fa-message"></i><span class="month">23</span>
+                       </div>
+                    </div>
+                </div>
+
+                 <div class="foot-img-container">
+                    <img class="foot-img" src="./Images/image_2.jpg" alt=""> 
+                    <div class="foot-date">
+                        <figcaption class="foot-caption">Even the all-powerful Pointing has no control about</figcaption>
+                       <div class="internal-foot-date">
+                         <i class="fa-solid fa-calendar-days"></i><span class="month">Sept 15, 2024</span> 
+                        <i class="fa-solid fa-user"></i><span class="month">Admin</span>
+                        <i class="fa-solid fa-message"></i><span class="month">23</span>
+                       </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+
+            <div class="foot-services">
+                <div class="foot-service-container">
+                     <h3 class="foot-head">SERVICES</h3><br>
+                    <ul class="foot-ul">
+                        <li class="foot-list">Cooked</li>
+                        <li class="foot-list">Delivered</li>
+                        <li class="foot-list">Quality Foods</li>
+                        <li class="foot-list">Drinks</li>
+                        <li class="foot-list">Mixed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="foot-questions">
+                <div class="question-container">
+                    <h3 class="foot-head">SERVICES</h3><br>
+                    <ul class="question-ul">
+                        <li class="question-list"><i class="fa-solid fa-location-dot"></i>
+                         No.3 Alpha Garden Porthacourt Rivers State, Nigeria.
+                        </li>
+                        <li class="question-list"><i class="fa-solid fa-phone"></i> +234 81 2126 9433</li>
+                        <li class="question-list"><i class="fa-solid fa-envelope"></i> ciscomahlee@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot-icons">
+          <li class="con-list">
+           <i class="fa-brands fa-twitter" id="foot-media"></i>
+         </li>
+         <li class="con-list">
+          <i class="fa-brands fa-facebook" id="foot-media"></i>
+         </li>
+         <li class="con-list">
+          <i class="fa-brands fa-instagram" id="foot-media"></i>
+         </li>
+        </div><br>
+        <div class="break"><br><br></div>
+        <div class="programmer">
+        <span class="my-id">Copyright &copy; 2024 || All rights Reserved || Coded By Anthony Raphael (Cisco Mahlee)</span>
+      </div><br>
+     </footer>
+
+
+    <script>
+       // Drop Down Button @800px
+        function showMenuBar() {
+           let menu = document.getElementById('menuList');
+            let openBtn = document.getElementById('menu-btn');
+            let closeBtn = document.getElementById('menu-btn2');
+            menu.style.display ="block";
+            menu.style.transitionBehavior="smooth"
+             openBtn.style.display ="none";
+             closeBtn.style.display ="block";
+        }
+
+        function hideSideBar() {
+           let closeBar = document.getElementById('menuList');
+           let openBtn = document.getElementById('menu-btn');
+           let closeBtn = document.getElementById('menu-btn2');
+            closeBar.style.display ="none";
+            closeBtn.style.display ="none";
+            openBtn.style.display ="block";
+        }
+  // Scroll Reveal Section
+         ScrollReveal({
+             reset: true,
+             distance:'60px',
+             duration:2500,
+             delay:200
+            });
+                ScrollReveal().reveal('.text-container, .pizza-head, .pizza-image-1, .pizza-image-2, .pizza-image-3, .menu-heading', { delay: 50, origin: 'top' });
+                ScrollReveal().reveal('.pizza-image-4, .pizza-image-5, .pizza-image-6', { delay: 50, origin: 'bottom' });
+                ScrollReveal().reveal(' .menu-img, .foot-img', { delay: 50, origin: 'left' });
+                ScrollReveal().reveal(' .fa-instagram, .fa-twitter, .fa-facebook', { delay: 50, origin: 'left' });
+          // Back to Top Scroll button
+
+        // Scroll Button
+  let calcScrollValue = () =>{
+    let scrollProgress = document.getElementById('progress');
+    let progressValue = document.getElementById('progress-value');
+    let pos = document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100)/ calcHeight);
+    if (pos > 100) {
+        scrollProgress.style.display = "grid";
+    }
+    else{
+        scrollProgress.style.display = "none";
+    }
+    scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+    });
+    scrollProgress.style.background = `conic-gradient(goldenrod ${scrollValue}%, #d7d7d7 ${scrollValue}%)`
+};
+
+
+
+  window.onscroll = calcScrollValue;
+  window.onload = calcScrollValue;
+
+  // Dynamic Linking
+    function showPizzaPage() {
+      let pizzaSection = document.getElementById('pizza-page');
+      let drinkSection = document.getElementById('drinks-page');
+      let burgerSection = document.getElementById('burger-page');
+      let pastaSection = document.getElementById('pasta-page');
+
+      let pizzaBtn = document.getElementById('active-menu1')
+      pizzaBtn.style.backgroundColor ="goldenrod";
+      pizzaBtn.style.color="black"
+
+      let drinkBtn = document.getElementById('active-menu2')
+      drinkBtn.style.backgroundColor ="transparent";
+      drinkBtn.style.color="goldenrod"
+
+       let burgerBtn = document.getElementById('active-menu3')
+      burgerBtn.style.backgroundColor ="transparent";
+      burgerBtn.style.color="goldenrod"
+
+       let pastaBtn = document.getElementById('active-menu4')
+       pastaBtn.style.backgroundColor ="transparent";
+       pastaBtn.style.color="goldenrod"
+
+      drinkSection.style.display ="none"
+      burgerSection.style.display ="none"
+      pastaSection.style.display ="none"
+      pizzaSection.style.display ="block"
+    }
+      function showDrinkPage() {
+      let drinkSection = document.getElementById('drinks-page');
+      let pizzaSection = document.getElementById('pizza-page');
+       let burgerSection = document.getElementById('burger-page');
+      let pastaSection = document.getElementById('pasta-page');
+
+      let drinkBtn = document.getElementById('active-menu2');
+      drinkBtn.style.backgroundColor="goldenrod";
+      drinkBtn.style.color="black";
+
+      let pizzaBtn = document.getElementById('active-menu1')
+      pizzaBtn.style.backgroundColor ="transparent";
+      pizzaBtn.style.color="goldenrod"
+
+        let burgerBtn = document.getElementById('active-menu3')
+        burgerBtn.style.backgroundColor ="transparent";
+        burgerBtn.style.color="goldenrod"
+
+          let pastaBtn = document.getElementById('active-menu4')
+          pastaBtn.style.backgroundColor ="transparent";
+          pastaBtn.style.color="goldenrod"
+
+      drinkSection.style.display ="block"
+      burgerSection.style.display ="none"
+      pastaSection.style.display ="none"
+      pizzaSection.style.display ="none"
+    }
+      function showBurgerPage() {
+      let burgerSection = document.getElementById('burger-page');
+      let pizzaSection = document.getElementById('pizza-page');
+      let pastaSection = document.getElementById('pasta-page');
+      let drinkSection = document.getElementById('drinks-page');
+
+      let burgerBtn = document.getElementById('active-menu3')
+      burgerBtn.style.backgroundColor="goldenrod";
+      burgerBtn.style.color="black";
+
+      let drinkBtn = document.getElementById('active-menu2')
+      drinkBtn.style.backgroundColor ="transparent";
+      drinkBtn.style.color="goldenrod"
+
+      let pizzaBtn = document.getElementById('active-menu1')
+      pizzaBtn.style.backgroundColor ="transparent";
+      pizzaBtn.style.color="goldenrod"
+
+      let pastaBtn = document.getElementById('active-menu4')
+      pastaBtn.style.backgroundColor ="transparent";
+      pastaBtn.style.color="goldenrod"
+
+      burgerSection.style.display ="block"
+      drinkSection.style.display ="none"
+       pastaSection.style.display ="none"
+      pizzaSection.style.display ="none"
+    }
+      function showPastaPage() {
+      let pastaSection = document.getElementById('pasta-page');
+       let burgerSection = document.getElementById('burger-page');
+      let pizzaSection = document.getElementById('pizza-page');
+      let drinkSection = document.getElementById('drinks-page');
+
+      let pastaBtn = document.getElementById('active-menu4')
+      pastaBtn.style.backgroundColor="goldenrod";
+      pastaBtn.style.color="black";
+
+      let burgerBtn = document.getElementById('active-menu3')
+      burgerBtn.style.backgroundColor="transparent";
+      burgerBtn.style.color="goldenrod";
+
+      let drinkBtn = document.getElementById('active-menu2')
+      drinkBtn.style.backgroundColor="transparent";
+      drinkBtn.style.color="goldenrod";
+
+      let pizzaBtn = document.getElementById('active-menu1')
+      pizzaBtn.style.backgroundColor="transparent";
+      pizzaBtn.style.color="goldenrod";
+      pastaSection.style.display ="block"
+      burgerSection.style.display ="none"
+      drinkSection.style.display ="none"
+      pizzaSection.style.display ="none"
+    }
+    </script>
+</body>
+</html>
